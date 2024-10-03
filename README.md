@@ -11,4 +11,50 @@ This is a simple Tic-Tac-Toe game developed in C. The game can be played between
 
 This project was built as a fun way to practice C programming, especially focusing on logic, loops, and arrays. Feel free to clone, play, and improve upon the project!
 
+Preview:
+```
+Player 1, Choose what you want [X or O]: X
+Player 1 is: X
+Player 2 is: O
+ 1 | 2 | 3 
+---|---|---
+ 4 | 5 | 6 
+---|---|---
+ 7 | 8 | 9 
+Remember the numbers placing.
+Press Any Key To Start.
+Player 1, your turn: 1
+ X |   |   
+---|---|---
+   |   |
+---|---|---
+   |   |
+Player 2, your turn: 2
+ X | O |   
+---|---|---
+   |   |
+---|---|---
+   |   |
+Player 1, your turn: 4
+ X | O |   
+---|---|---
+ X |   |
+---|---|---
+   |   |
+Player 2, your turn: 5
+ X | O |   
+---|---|---
+ X | O |
+---|---|---
+   |   |
+Player 1, your turn: 7
+ X | O |   
+---|---|---
+ X | O |
+---|---|---
+ X |   |
+Player X has won the match.
+Player 1 score = 1       Player 2 score = 0
+Press 1 to start a new game. OR Press 0 to Exit: 0
+```
 
