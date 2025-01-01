@@ -162,10 +162,18 @@ int main()
             do
             {
                 printf("Player 1, your turn: ");
-                scanf("%d", &num);
-                if (num >= 10)
+                if (scanf("%d", &num) != 1)
                 {
-                    printf("\nInvalid Input.\n");
+                    while ((getchar()) != '\n')
+                        ;
+                    printf("\nInvalid Input. Please enter between 0 to 9.\n ");
+                    continue;
+                }
+                else if (num >= 10 || num <= 0)
+                {
+                    while ((getchar()) != '\n')
+                        ;
+                    printf("\nInvalid Range please enter between 0 to 9.\n");
                 }
                 else if (board[(num - 1) / 3][(num - 1) % 3] != ' ')
                 {
@@ -198,13 +206,16 @@ int main()
             {
                 printf("Player 2, your turn: ");
                 scanf("%d", &num);
-                if (num >= 10)
+                if (scanf("%d", &num) != 1)
                 {
-                    printf("\nInvalid Input.\n");
+                    while ((getchar()) != '\n');
+                    printf("\nInvalid Input. Please enter between 0 to 9.\n ");
+                    continue;
                 }
-                else if (board[(num - 1) / 3][(num - 1) % 3] != ' ')
+                else if (num >= 10 || num <= 0)
                 {
-                    printf("Position is occupied.\n");
+                    while ((getchar()) != '\n');
+                    printf("\nInvalid Range please enter between 0 to 9.\n");
                 }
                 else
                 {
